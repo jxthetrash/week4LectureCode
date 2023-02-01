@@ -2,10 +2,11 @@
 Make the text centered
 Give it a margin of 10px
 Font size should be twice the normal size */
-/* h1, h2{
-	
-  
-  } */
+h1, h2{
+	text-align: center;
+	margin: 10px;
+	font-size: 200%;  
+  }
 
   /* style the grid container
   Dislay should be grid
@@ -27,7 +28,11 @@ Add  a background image that links to the image in your folder */
 Give them a background of #e5e5e5 
 Add 20px of padding & font-size of 30px  */
 
-
+.grid > div {
+	background-color: #e5e5e5;
+	padding: 20px;
+	font-size: 30px;
+}
 
 /* Now try and style the individual boxes using grid-column */
 
@@ -37,3 +42,28 @@ Add 20px of padding & font-size of 30px  */
 	/* justify-items:;  */
 	/* align-items:; */
 	/* align-content:; */
+
+.item2{
+	grid-column: 3/4;
+}
+
+.item3{
+	grid-column: 2/3;
+}
+
+.item4{
+	grid-column: 1/2;
+}
+
+.item5{
+	grid-column: 3/4;
+}
+
+.item_a{
+	grid-row: 3;
+	grid-column: 3/4;
+}
+
+.item_b{
+	grid-column: 3/4;
+}
